@@ -76,7 +76,7 @@ My-Portfolio/
 My goal is to continue learning, improve my frontend development skills, build useful websites, and grow as a professional web developer.
 
 ---
-visit my page :  https://vida0528.github.io/My-portfolio/
+visit my page :  https://vida0528.github.io/My-portfolio/index.html
 ⭐ Thank you for visiting my portfolio repository!
 
 **© 2026 Onyewuchi Ugochi Vida. All Rights Reserved.**
