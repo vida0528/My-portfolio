@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<!-- saved from url=(0034)http://127.0.0.1:5500/profile.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY Profile card</title>
+    <link rel="stylesheet" href="./MY Profile card_files/profile.css">
+</head>
+<body>
+    <div id="profile-card">
+    <img class="profile-picture" src="./MY Profile card_files/time-management-businessman-gadgets-business-concept-G0ETPB.jpg" alt="profile picture">
+    <h1 class="profile-name">Onyewuchi vida ugochi</h1>
+    <h2 class="job-title">Web development student</h2>
+    <p class="location">Lagos,Nigeria</p>
+    <p class="bio">My name is Onyewuchi ugochi vida I'm a Web Development student. I am passionate about creating simple, responsive websites and I am constantly improving my skills by building simple projects and I enjoy working on projects that help me improve my coding skills while creating useful and attractive web pages.My goals is to continue improving my skills and build a successful career in the tech industry.one of my favourite ways to relax is by watching movies especially those with great stories and action.</p>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Showcase</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style>
+          *{
+            box-sizing: border-box;
+            padding: 0;
+            margin: 10px;
+            
+        }
+        header{
+            display: flex;
+            align-items: center;
+            padding:20px;
+            justify-content: flex-start;
+
+        }
+        .logo img{
+            width: 50px;
+            height: 50px;
+        }
+        ul{
+            display:flex;
+            gap:120px;
+            font-family: Roboto,Arial, Helvetica, sans-serif;
+            margin: auto;
+            justify-content:center
+        }
+        body{
+            color: #a6896f;
+            background-color: #efe2de
+        }
+            
+    
+        /*hero section*/
+        .hero-text{
+            display:block;
+            padding:50px;
+            justify-content: center;
+            text-align: center;
+        }
+        .hero h1{
+            font-family: Roboto,Arial, Helvetica, sans-serif;
+            display: inline-block;
+            text-align: center;
+        }                
+
+        button{
+        background: black;
+        color: #ffffff;
+        padding:  10px;
+        font-weight: bold;
+        border: none;
+        border-radius: 15px
+        }
+        
+        .products-container{
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            
+        }
+        .card{
+            width: 300px;
+            padding:20px;
+            justify-content: center;
+            flex-wrap: wrap;
+            display: flex;
+            padding:20px;
+        }
+        .card img{
+            width:100%;
+            height:250;
+            flex-wrap: wrap;
+            display: flex;
+            justify-content: center;
+        }
+        
+        button:hover{
+            transition: 0,8s;
+            box-shadow: 10px 2px 5px rgba(0,0,128,1.0);
+        }
+        .why-choose{
+            display: flex;
+            justify-content: space-between;
+            gap:20px;
+        }
+        .card{
+            text-align: left;
+            padding-top: 20px;
+        }
+        .customer-reviews h1{
+            text-align: center;
+        }
+        .reviews-container{
+            display: flex;
+            text-align: center;
+        }
+
+        #contact{
+            text-align: center;
+            font-size: large;
+        }
+        .Company-Name{
+            text-align: center;
+        }
+        .Quick-links{
+            text-align: center;
+        }
+        .footer{
+            font-size: larger;
+            padding: 10px;
+        }  
+
+</style>
+</head>      
+<body>
+    <header>
+        <div class="logo img">
+        <img src="https://i.pinimg.com/474x/25/e9/3e/25e93ed2f0b14743ef138840391513ad.jpg" alt="clothing logo">
+        </div>
+
+    <!-----Navigation-->
+    <ul class="nav-link">
+        <li><a href="Home">home</a></li>
+        <li><a href="Products">products</a></li>
+        <li><a href="About">About</a></li>
+        <li><a href="Contact">Contact</a></li>
+    </ul>
+</header>
+    <!-----hero section-->
+    <section class="hero">
+        <div class="hero-text">
+            <h1>VIDA COLLECTIONS</h1>
+            <P>Discover Stylish,Trendy,and Affordable Fashion for Men and Women.Upgrade your Wardrobe with our latest collection designed for every occasion</P>
+            <button type="button">Shop NOW</button>
+
+    <!----Featured Proudcts-->
+    <section class="product">
+
+        <h2>Featured Proudcts</h2>
+        <div class="products-container">
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQS8a4lmu19SBi0Npg9YpK7N5dxvEVs6quYKfvUlWex_miQwU0XuhZM6gcx&s=10" alt="T-shirts">
+            <h3>Classic T-Shirt</h3>
+            <h4>#19,000</h4>
+            <p>Soft,comofortable and perfect for everyday wear.</p>
+            <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTa9rg9VpTrTos9ZZBmSO57CfNsSr9VxxJTPtA1gcsXchYskxsSPHT0vj70&s=10" alt="jean">
+            <h3>Denim jeans</h3>
+            <h4>#15,000</h4>
+            <p>Durable,Stylish,and designed for a perfect fit.</p>
+            <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+            <img src="https://img.kwcdn.com/product/fancy/6af230c9-6cd5-4e90-91dc-1ef34c5950a1.jpg?imageView2/2/w/500/q/60/format/webp" alt="two pieces">
+            <h3>Men's Two-Piece set</h3>
+            <h4>#20,000</h4>
+            <p>Trendy two-piece set made with quality fabrics for a fashionable look.</p>
+            <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSby5WHxQnnO6L3eeo-VTFBQhZYDkR3ZkPO5BLxiVvQXNEBQKKOh3rr8Cc&s=10" alt="Basic tops">
+            <h3>Basic tops</h3>
+            <h4>#7,000</h4>
+            <p>Simple,Stylish,and Versatile.Perfect for paring with jeans,skirts,or shorts.</p>
+            <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+            <img src="https://m.media-amazon.com/images/I/41z9AZgckyL._AC_SY1000_.jpg" alt="Bum Shorts">
+            <h3>Bum Shorts</h3>
+            <h4>#3,000</h4>
+            <p>Comfortable Casual Wear for Everyday Style.</p>
+            <button type="button">Buy Now</button>
+            </div>
+
+            <div class="card">
+            <img src="https://files.sophie.co.ke/2024/07/907037484_7359_5804.webp?sfcv=1720126506" alt=Two-piece>
+            <h3>Women's Two-Piece Set</h3>
+            <h4>#16,000</h4>
+            <p>Elevate Your Style with our elegant two-piece outfit,designed for comfort and confidence.</p>
+            <button type-="button">Buy Now</button>
+            </div>
+        </div>
+    </section>
+
+            <h1>Why choose us</h1>
+            <section class="why-choose">
+        
+        
+            <div class="card">
+            <h2>Fast Delivery</h2>
+            <p>Your orders are delivered quickly and safely🚵.</p>
+            </div>
+
+            <div class="card">
+            <h2>Quality Products</h2>
+            <p>We provide high-quality clothing made with durable fabrics for lasting comfort and style👔.</p>
+            </div>
+
+            <div class="card">
+            <h2>24/7 Support</h2>
+            <p>We're always ready to assist you☎️.</p>
+            </div>
+            </div>
+        
+            </section>
+
+            
+            <section class="customer-reviews">
+            <h1>Customer Reviews</h1>
+
+            <div class="reviews-container">
+
+            <div class="review-card">
+            <h2>Chioma</h2>
+            <p>I love the quality of the clothes.Highly recommended.</p>
+            </div>
+
+            <div class="reviews-card">
+            <h2>Emeka</h2>
+            <p>Fast delivery and excellent customer service.</p>
+            </div>
+            
+            <div class="reviews-card">
+            <h2>Tayo</h2>
+            <p>Afforable price and beautiful outfits.I'll definitely shop again.</p>
+            </div>
+
+            </div>
+
+        </section>
+
+        <!--------contact section-->
+        <section id="contact">
+        <h2>Contact me</h2>
+
+        <p>Email📩:<a href="onyewchiochi55@gamil.com">onyewchiugochi55@gmail.com</p>
+        <p>phone📞:<a href="tel:+2348136299920">+2348136299920</p>
+        <p>Location📍:Lagos,Nigeria</p>
+    </section>
+
+
+            
+            <footer>
+            <section class="Company-Name">
+                <h1>VIDA COLLECTIONS👔👗</h1>
+            </section>
+
+            <div class="Quick-links">
+            <h1> Quick link</h1>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">contact</a></li>
+                <li><a href="#">products</a></li>
+            </ul>
+            
+            <div class="footer">
+            <a href="#">facebook</a>|
+            <a href="#">Instagram</a>|
+            <a href="#">tiktok</a>
+
+            <p>&copy:Vida Collections.All Rights Reserved.</p>
+        </footer>
+
+
+</body>
+</html>

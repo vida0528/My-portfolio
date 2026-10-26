@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/whatsapp.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp Chat</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #fdfce8;
+            margin: 0;
+        }
+
+        header{
+            color: #25d366;
+            justify-content: left;
+        }
+
+        .search-box{
+            padding: 10px;
+        }
+        .search-box input{
+            width: 30%;
+            padding: 10px;
+            border-radius: 50px;
+            border: 1px solid #ccc;
+        }
+
+.app{
+            display: flex;
+            width: 100%;
+        }
+
+        .sidebar_chat{
+            width: 50%;
+            height: 80dvh;
+            padding: 10px;
+            background: #ffffff;
+            border-radius: 10px;
+        }
+
+        .img2{
+            width: 50px;
+            height: 50px;
+            border-radius: 50%;
+        }
+
+        .chat1{
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: space-between;
+            gap: 10px;
+            padding: 10px;
+            border-bottom: 1px solid #eee;
+        }
+
+        .chat-container{
+            flex-basis: 60%;
+        }
+        
+        .chat-container p{
+            margin: 0;
+            font-size: 13px;
+            color: #888;
+        }
+
+        .bottom{
+            text-align: right;
+        }
+
+        .bottom h6{
+            margin: 0;
+        }
+        .bottom p{
+            display: inline-block;
+            background: #25d366;
+            color: #ffffff;
+            border-radius: 50%;
+            padding: 2px 8px;
+            font-size: 12px;
+            margin: 0;
+        }
+        .time{
+            color: #25d366;
+            font-size: 11px;
+            font-weight: normal;
+            margin: 0;
+            white-space: nowrap;
+            align-self: flex-end;
+        }
+
+        
+        .main-container{
+            display: flex;
+            flex-direction: column;
+            flex:1;
+            background: #fdfce8;
+            width:100%;
+            
+        }
+        .chat-header{
+            justify-content: left;
+            flex:1;
+            display: flex;
+        }
+        .received{
+            display: flex;
+            justify-self:left;
+            text-align: right;
+            justify-self: flex-start;
+
+        }
+.sent{
+            display: flex;
+            flex-direction: column;
+            align-items: flex-end;
+            gap: 6px;
+            text-align: right;
+            justify-items: flex-end;
+        }
+.chat-body{
+            display:block;
+            padding: 20px;
+            flex-wrap: wrap;
+            background-color:#fdfce8 ;
+            width: 80%;
+            margin-bottom: 20px;
+        }
+
+
+.message-box{
+            display: flex;
+            width: 100%;
+            font-size: 14px;
+            align-items: center;
+            gap: 10px;
+            padding: 10px;
+        
+        }
+        .message-input{
+            display: flex;
+            flex: 1;
+            align-items: center;
+            gap: 8px;
+        }
+        .message-box input{
+            border-radius: 60px;
+            width: 100%;
+            flex: 1;
+            padding: 12px 16px;
+            border: 1px solid #fff;
+        }
+        .emoji{
+            font-size: 24px;
+        }
+        .mic-btn{
+            border-radius: 50%;
+            border: none;
+            background: #25d366;
+            color: #ffffff;
+            width: 40px;
+            height: 40px;
+        }
+        
+        .day{
+            width: 150px;
+            padding: 20px;
+            color: #25d366;
+            margin:auto;
+            border:1px solid #eee;
+            border-radius: 200px;
+            text-align: center;
+            background: #fff;
+        }
+
+        .unread{
+            width:180px;
+            padding: 20px;
+            color: #25d366;
+            margin: 0 auto;
+            text-align: center;
+            border-radius: 200px;
+            background: #fff;
+            border: 1px solid #eee;
+        }
+        
+        #chat-header{
+            display: flex;
+            justify-self: right;
+            align-items: last baseline;
+            padding: 10px;
+            text-align: right;
+        }
+
+@media screen and (max-width: 768px)
+    {
+
+            .sidebar_chat{
+                width: 100%;
+                height: auto;
+            }
+            .main-container{
+                width: 100%;
+            }
+            .chat-body{
+                width: 50%;
+            }
+            .message-box input{
+                width: 50%;
+            }
+        }
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>WhatsApp Chat</h1>
+    </header>
+
+    <div class="search-box">
+        <input type="text" placeholder="search or start a new chat">
+    </div>
+
+    <div class="app">
+        <!-- Sidebar (left) -->
+        <div class="sidebar_chat">
+            <!-- chat 1 -->
+            <div class="chat1">
+                <div class="profile_image">
+                    <img src="./WhatsApp Chat_files/Snapchat-150559685.jpg" alt="vida" class="img2">
+                </div>
+                <div class="chat-container">
+                    <div class="top">
+                        <h4>Vida</h4>
+                        <p>hello this is victor</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h6 class="time">11:20pm</h6>
+                    <p>1</p>
+                </div>
+            </div>
+
+            <!-- chat 2 -->
+            <div class="chat1">
+                <div class="profile_image">
+                    <img src="./WhatsApp Chat_files/Snapchat-2045907723.jpg" alt="vida" class="img2">
+                </div>
+                <div class="chat-container">
+                    <div class="top">
+                        <h4>Vida</h4>
+                        <p>How are you doing?</p>
+                    </div>
+                </div>
+                <div class="bottom">
+                    <h6 class="time">11:20pm</h6>
+                    <p>1</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- Main container (right)--->
+        <main class="main-container">
+            <!-- chat header -->
+            <header id="chat-header">
+                <img src="./WhatsApp Chat_files/4df6e459a88449c688e85d7b2820771c.jpg" alt="vida" class="img2">
+                <div>
+                    <h3>Victor</h3>
+                    <h4>online</h4>
+                </div>
+            </header>
+
+            <section class="chat-body">
+                <div class="day">Today</div>
+
+                <div class="received">
+                    <h3>hello👋</h3>
+                    <h4 class="time">9:00</h4>
+                </div>
+                
+        
+                <div class="sent">
+                    <p>how are you doing?</p>
+                    <h4 class="time">9:15✓✓</h4>
+                </div>
+
+                <div class="unread">
+                    1 UNREAD MESSAGE
+                </div>
+
+                <div class="received">
+                    <p>Are you still coming?</p>
+                    <h4 class="time">9:40</h4>
+                </div>
+            </section>
+
+            <!---------message box-->
+            <div class="message-box">
+                <span class="emoji">😊</span>
+
+            <div class="message-input">
+                <input type="text" placeholder="Type a message">
+                <button class="mic-btn">🎤</button>
+        
+
+
+            </div>
+        </div></main>
+    </div>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</body></html>

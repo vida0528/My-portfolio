@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<!-- saved from url=(0035)http://127.0.0.1:5500/menucard.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🍽️ Premium Restaurant Menu</title>
+    <link rel="stylesheet" href="./🍽️ Premium Restaurant Menu_files/Menucard.css">
+</head>
+<body>
+<header>
+    <h1>🍽️PREMIUM RESTAURANT MENU</h1>
+    
+<div class="menu-container">
+    <!----- Card 1 ------>
+    <div class="menu-card card1">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Coffee">
+        <div class="card-content">
+            <h2>Coffee</h2>
+            <p>Single Origin Ethiopian yirgacheffe and Melted Raclette Cheese Truffle Aioli</p>
+            <h3>$6 &amp; $12</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!----- Card 2 ------>
+    <div class="menu-card card2">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Juice">
+        <div class="card-content">
+            <h2>Juice</h2>
+            <p>Cold pressed and Caramelized onions</p>
+            <h3>$8 &amp; $9</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!----- Card 3 ------>
+    <div class="menu-card card3">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Suya">
+        <div class="card-content">
+            <h2>Suya</h2>
+            <p>The Spicy beef suya and peppered chicken suya</p>
+            <h3>$26 &amp; $15</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!----- Card 4 ------>
+    <div class="menu-card card4">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Pounded Yam">
+        <div class="card-content">
+            <h2>Iyan</h2>
+            <p>Pounded yam &amp; Efo Riro</p>
+            <h3>$21</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!----- Card 5 ------>
+    <div class="menu-card card5">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Chicken">
+        <div class="card-content">
+            <h2>Chicken</h2>
+            <p>Sous-vide organic</p>
+            <h3>$19</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+    <!----- Card 6 ------>
+    <div class="menu-card card6">
+        <img src="https://quikprint.ng/img/v1/o6dtUeCGyXdSGBH-ZXAaDxhakGn44l4yqIOmg9YA7fk/pr:pdp/plain/local:///2026/04/15/bac569db-736a-4f4f-8277-96c342944715.png@webp" alt="Sandwich">
+        <div class="card-content">
+            <h2>Sandwich</h2>
+            <p>Spicy peppered Gizzard &amp; plantain Sandwich</p>
+            <h3>$17</h3>
+            <button class="order-btn">Order Now</button>
+        </div>
+    </div>
+
+
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+
+</div></header></body></html>
